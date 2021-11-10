@@ -3,9 +3,10 @@
 }
 .benefits-section__list {
   width: 270px;
-}
-.benefits-section__list:not(:last-child) {
-  margin-right: 30px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .benefits-section__title {
   font-weight: 700;
@@ -18,7 +19,6 @@
   line-height: 1.71;
   color: var(--text-color);
 }
-
 .benefits-section__item {
   display: flex;
   justify-content: center;
@@ -29,7 +29,6 @@
   margin-bottom: 30px;
   background-color: var(--button-color);
 }
-
 .benefits-section__icon {
   width: 70px;
   height: 70px;

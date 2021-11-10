@@ -23,20 +23,25 @@
   border-radius: 4px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__icon {
-  background-color: transparent;
-  fill: var(--icon-color);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  border-color: #2196f3;
+  &:hover {
+    border-color: #2196f3;
+  }
+  &:focus {
+    border-color: #2196f3;
+  }
+
+  &:hover .clients__picture {
+    fill: var(--accent-color);
+  }
+  &:focus .clients__picture {
+    fill: var(--accent-color);
+  }
 }
 .clients__picture {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__link:hover .clients__picture,
-.clients__link:focus .clients__picture {
-  fill: var(--accent-color);
+.clients__icon {
+  background-color: transparent;
+  fill: var(--icon-color);
 }

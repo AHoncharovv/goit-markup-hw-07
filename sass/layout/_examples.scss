@@ -12,9 +12,6 @@
 .examples-sectio__list {
   display: flex;
 }
-.examples-section__picture:not(:last-child) {
-  margin-right: 30px;
-}
 .examples-section__text {
   font-weight: 700;
   font-size: 14px;
@@ -24,6 +21,10 @@
 }
 .examples-section__picture {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .examples-section__container {
   width: 100%;
